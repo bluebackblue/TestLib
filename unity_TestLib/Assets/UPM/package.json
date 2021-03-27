@@ -1,15 +1,21 @@
 {
-  "name": "com.blueback.TestLib",
-  "displayName": "TestLib",
-  "version": "0.0.1",
-  "unity": "2021.2",
-  "description": "Test Library",
-  "author": {
-    "name": "blueback",
-    "url": "https://github.com/bluebackblue"
-  },
-  "keywords": [
-    "test"
-  ],
-  "dependencies": {}
+    "name": "com.bluebackblue.testlib",
+    "displayName": "Test Lib", 
+    "version": "1.0.0",               
+    "unity": "2020.2",
+    "description": "Test Lib.",
+    "author": {
+        "name": "bluebackblue",
+        "url": "https://github.com/bluebackblue"
+    },
+    
+    "keywords": [
+        "shader",
+    ],
+    
+    "dependencies": {
+    },
+
+    "samples": [
+    ]
 }
