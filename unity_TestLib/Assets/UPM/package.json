@@ -1,1 +1,15 @@
-{"name":"com.blueback.TestLib","displayName":"TestLib","version":"0.0.1","unity": "2021.2","description":"Test Library",  "author":{"name": "blueback","url": "https://github.com/bluebackblue"},"keywords":["test"],"dependencies":{}}
+{
+  "name": "com.blueback.TestLib",
+  "displayName": "TestLib",
+  "version": "0.0.1",
+  "unity": "2021.2",
+  "description": "Test Library",
+  "author": {
+    "name": "blueback",
+    "url": "https://github.com/bluebackblue/TestLib/tree/main/unity_TestLib/Assets/UPM"
+  },
+  "keywords": [
+    "test"
+  ],
+  "dependencies": {}
+}
