@@ -1,16 +1,16 @@
 {
     "name": "com.bluebackblue.testlib",
-    "displayName": "Test Lib", 
+    "displayName": "TestLib", 
     "version": "1.0.0",               
     "unity": "2020.2",
-    "description": "Test Lib.",
+    "description": "TestLib",
     "author": {
-        "name": "bluebackblue",
+        "name": "blueback",
         "url": "https://github.com/bluebackblue"
     },
     
     "keywords": [
-        "shader"
+        "test"
     ],
     
     "dependencies": {
