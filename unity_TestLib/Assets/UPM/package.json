@@ -1,21 +1,16 @@
 {
     "name": "com.bluebackblue.testlib",
-    "displayName": "TestLib", 
-    "version": "1.0.0",               
+    "displayName": "TestLib",
+    "version": "1.0.1",
     "unity": "2020.2",
     "description": "TestLib",
     "author": {
         "name": "blueback",
         "url": "https://github.com/bluebackblue"
     },
-    
     "keywords": [
         "test"
     ],
-    
-    "dependencies": {
-    },
-
-    "samples": [
-    ]
+    "dependencies": {},
+    "samples": []
 }

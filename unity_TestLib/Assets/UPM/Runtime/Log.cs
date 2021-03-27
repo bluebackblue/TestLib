@@ -2,7 +2,7 @@
 
 /**
 */
-namespace TestLibLog
+namespace TestLib
 {
 	public class TestLibClass
 	{
