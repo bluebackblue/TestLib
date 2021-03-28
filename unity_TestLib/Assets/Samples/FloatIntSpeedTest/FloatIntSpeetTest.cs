@@ -10,7 +10,7 @@ namespace Samples.TestLib.FloatIntSpeedTest
 	{
 		/** speedtester
 		*/
-		BlueBack.TestLib.SpeedTester.SpeedTester speedtester;
+		private BlueBack.TestLib.SpeedTester.SpeedTester speedtester;
 
 		/** Start
 		*/

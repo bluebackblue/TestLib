@@ -1,7 +1,7 @@
 {
   "name": "blueback.testlib",
   "displayName": "TestLib",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "unity": "2020.2",
   "description": "テスト用ライブラリ",
   "author": {

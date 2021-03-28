@@ -14,7 +14,7 @@ namespace Editor
 
         /** MenuItem_Tool_CopySamples
         */
-        [UnityEditor.MenuItem("ÉcÅ[Éã/CopySamples")]
+        [UnityEditor.MenuItem("„ÉÑ„Éº„É´/CopySamples")]
         private static void MenuItem_Tool_CopySamples()
         {
             s_process = new System.Diagnostics.Process();

@@ -1,6 +1,6 @@
 # TestLib
-テスト用ライブラリ
+繝�繧ｹ繝育畑繝ｩ繧､繝悶Λ繝ｪ
 
 ## BlueBack.TestLib.SpeedTester
-速度計測
+騾溷ｺｦ險域ｸｬ
 
