@@ -17,7 +17,7 @@ https://github.com/bluebackblue/TestLib.git?path=unity_TestLib/Assets/UPM
 * メニュー選択：「Window->Package Manager」
 * ボタン選択：「左上の＋ボタン」
 * リスト選択：Add package from git URL...
-* アドレスを追加「https://github.com/bluebackblue/TestLib.git?path=unity_TestLib/Assets/UPM」
+* アドレスを追加「 https://github.com/bluebackblue/TestLib.git?path=unity_TestLib/Assets/UPM 」
 
 ## SpeedTester
 速度計測と「UI.Text」での表示。
