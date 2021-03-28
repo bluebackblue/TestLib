@@ -19,7 +19,7 @@ https://github.com/bluebackblue/TestLib.git?path=unity_TestLib/Assets/UPM
 * リスト選択：Add package from git URL...
 * アドレスを追加「 https://github.com/bluebackblue/TestLib.git?path=unity_TestLib/Assets/UPM 」
 ### 注
-Gitクライアンとがインストールされている必要がある。
+Gitクライアントがインストールされている必要がある。
 * https://docs.unity3d.com/ja/current/Manual/upm-git.html
 * https://git-scm.com/
 
