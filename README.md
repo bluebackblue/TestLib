@@ -24,7 +24,7 @@ https://github.com/bluebackblue/TestLib.git?path=unity_TestLib/Assets/UPM
 
 ### サンプル
 
-floatとintでの速度差を計測するサンプル
+floatとintでの処理負荷を比較するサンプル。
 
 ```
 /** FloatIntSpeetTest
