@@ -1,12 +1,9 @@
 {
   "name": "blueback.testlib",
-  "references": [
-    "UnityEngine.UI"
-  ],
   "displayName": "TestLib",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "unity": "2020.2",
-  "description": "テストコード用ライブラリ",
+  "description": "テスト用ライブラリ",
   "author": {
     "name": "blueback",
     "url": "https://github.com/bluebackblue"
@@ -19,7 +16,7 @@
     {
       "displayName": "FloatIntSpeedTest",
       "description": "FloatとIntの速度テスト",
-      "path": "Samples/FloatIntSpeedTest"
+      "path": "Samples~/FloatIntSpeedTest"
     }
   ]
 }
