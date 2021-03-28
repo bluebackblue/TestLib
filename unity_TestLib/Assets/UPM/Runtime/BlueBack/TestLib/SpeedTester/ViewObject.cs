@@ -1,39 +1,12 @@
 ﻿
 
-/** BlueBack.TestLib
+/** BlueBack.TestLib.SpeedTester
 */
-namespace BlueBack.TestLib
+namespace BlueBack.TestLib.SpeedTester
 {
-	/** OnStartCallBackInterface
-	*/
-	public interface OnStartCallBackInterface
-	{
-		/** OnStart
-		*/
-		public void OnStart();
-	}
-
-	/** Canvas_MonoBehaviour
-	*/
-	public class Canvas_MonoBehaviour : UnityEngine.MonoBehaviour
-	{
-		/** callback
-		*/
-		public OnStartCallBackInterface callback;
-
-		/** callback
-		*/
-		private void Start()
-		{
-			if(this.callback != null){
-				this.callback.OnStart();
-			}
-		}
-	}
-
 	/** ViewObject
 	*/
-	public class ViewObject : OnStartCallBackInterface
+	public class ViewObject : CallBackInterface
 	{
 		/** config
 		*/
@@ -53,7 +26,7 @@ namespace BlueBack.TestLib
 
 		/** constructor
 		*/
-		public ViewObject(Config a_config)
+		public ViewObject(Config a_config,int a_max)
 		{
 			//config
 			this.config = a_config;
@@ -97,7 +70,7 @@ namespace BlueBack.TestLib
 			{
 				UnityEngine.Font t_font = UnityEngine.Resources.GetBuiltinResource<UnityEngine.Font>("Arial.ttf");
 
-				this.text_list = new UnityEngine.UI.Text[a_config.CANVAS_MAX];
+				this.text_list = new UnityEngine.UI.Text[a_max];
 				for(int ii=0;ii<this.text_list.Length;ii++){
 
 					UnityEngine.GameObject t_text_gameobject = new UnityEngine.GameObject("text");

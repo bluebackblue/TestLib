@@ -1,12 +1,12 @@
 ﻿
 
-/** BlueBack.TestLib
+/** BlueBack.TestLib.SpeedTester
 */
-namespace BlueBack.TestLib
+namespace BlueBack.TestLib.SpeedTester
 {
-	/** TestLib
+	/** SpeedTester
 	*/
-	public class TestLib
+	public class SpeedTester
 	{
 		/**viewobject
 		*/
@@ -14,14 +14,14 @@ namespace BlueBack.TestLib
 
 		/** test_list
 		*/
-		private Test_Base[] test_list;
+		private ITest[] test_list;
 
 		/** constructor
 
 			a_test_list	: テストリスト。
 
 		*/
-		public TestLib(Test_Base[] a_test_list,Config a_config = null)
+		public SpeedTester(ITest[] a_test_list,Config a_config = null)
 		{
 			//config
 			Config t_config = a_config;
@@ -33,7 +33,7 @@ namespace BlueBack.TestLib
 			this.test_list = a_test_list;
 
 			//viewobject
-			this.viewobject = new ViewObject(t_config);
+			this.viewobject = new ViewObject(t_config,a_test_list.Length);
 		}
 
 		/** 削除。
@@ -57,23 +57,23 @@ namespace BlueBack.TestLib
 		*/
 		public void Test(int a_index)
 		{
-			Test_Base t_test = this.test_list[a_index];
+			ITest t_test = this.test_list[a_index];
 
-			//テスト前処理。
-			t_test.PreTest();
+			//前処理。
+			t_test.PreAction();
 
 			//計測開始。
 			float t_time = UnityEngine.Time.realtimeSinceStartup;
 			
-			//テスト。
+			//計測処理。
 			{
-				t_test.Test();
+				t_test.TestAction();
 			}
 
 			//計測終了。
 			float t_delta_time = UnityEngine.Time.realtimeSinceStartup - t_time;
 
-			//表示。
+			//結果。
 			this.viewobject.text_list[a_index].text = t_test.Result(t_delta_time);
 		}
 

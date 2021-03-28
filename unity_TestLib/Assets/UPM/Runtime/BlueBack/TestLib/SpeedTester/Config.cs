@@ -1,8 +1,8 @@
 ﻿
 
-/** BlueBack.TestLib
+/** BlueBack.TestLib.SpeedTester
 */
-namespace BlueBack.TestLib
+namespace BlueBack.TestLib.SpeedTester
 {
 	/** Config
 	*/
@@ -23,10 +23,6 @@ namespace BlueBack.TestLib
 		/** Hierarchy上の名前。
 		*/
 		public string CANVAS_NAME;
-
-		/**　リスト最大数。
-		*/
-		public int CANVAS_MAX;
 
 		/**　フォントサイズ。
 		*/
@@ -55,7 +51,6 @@ namespace BlueBack.TestLib
 			this.CAMERA_COLOR = new UnityEngine.Color(0.0f,0.0f,0.0f,1.0f);
 			this.CAMERA_DEPTH = 50.0f;
 			this.CANVAS_NAME = "TestLib_Canvas";
-			this.CANVAS_MAX = 10;
 			this.CANVAS_FONTSIZE = 22;
 			this.CANVAS_FONTBESTFIT = true;
 			this.CANVAS_FONTCOLOR = new UnityEngine.Color(0.5f,0.5f,0.5f,1.0f);

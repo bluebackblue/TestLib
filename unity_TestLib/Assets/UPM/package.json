@@ -1,19 +1,25 @@
 {
-    "name": "blueback.testlib",
-    "references": [
-        "UnityEngine.UI"
-    ],
-    "displayName": "TestLib",
-    "version": "1.0.0",
-    "unity": "2020.2",
-    "description": "テストコード用ライブラリ",
-    "author": {
-        "name": "blueback",
-        "url": "https://github.com/bluebackblue"
-    },
-    "keywords": [
-        "test"
-    ],
-    "dependencies": {},
-    "samples": []
+  "name": "blueback.testlib",
+  "references": [
+    "UnityEngine.UI"
+  ],
+  "displayName": "TestLib",
+  "version": "1.0.0",
+  "unity": "2020.2",
+  "description": "テストコード用ライブラリ",
+  "author": {
+    "name": "blueback",
+    "url": "https://github.com/bluebackblue"
+  },
+  "keywords": [
+    "test"
+  ],
+  "dependencies": {},
+  "samples": [
+    {
+      "displayName": "FloatIntSpeedTest",
+      "description": "FloatとIntの速度テスト",
+      "path": "Samples~/FloatIntSpeedTest"
+    }
+  ]
 }

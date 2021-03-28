@@ -6,22 +6,22 @@ namespace Scenes
 {
 	/** Test00
 	*/
-	public class Test00 : BlueBack.TestLib.Test_Base
+	public class Test00 : BlueBack.TestLib.SpeedTester.ITest
 	{
 		/** 計算結果。
 		*/
 		private float result;
 
-		/** [SpeedTest.Action_Base]テスト前処理。
+		/** [BlueBack.TestLib.SpeedTester.PreTest]前処理。
 		*/
-		public void PreTest()
+		public void PreAction()
 		{
 			this.result = 0.0f;
 		}
 
-		/** [SpeedTest.Action_Base]テスト処理。
+		/** [BlueBack.TestLib.SpeedTester.PreTest]計測するテスト処理。
 		*/
-		public void Test()
+		public void TestAction()
 		{
 			float t_result = 0.0f;
 
@@ -36,7 +36,7 @@ namespace Scenes
 			this.result = t_result;
 		}
 
-		/** [SpeedTest.Action_Base]テスト結果。
+		/** [BlueBack.TestLib.SpeedTester.PreTest]結果。
 
 			a_delta_time		: 処理秒数。
 			return			: 表示文字列。

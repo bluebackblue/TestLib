@@ -8,15 +8,15 @@ namespace Scenes
 	*/
 	public class Main_MonoBehaviour : UnityEngine.MonoBehaviour
 	{
-		/** t_testlib
+		/** t_speedtester
 		*/
-		private BlueBack.TestLib.TestLib t_testlib;
+		private BlueBack.TestLib.SpeedTester.SpeedTester speedtester;
 
 		/** Start
 		*/
 		private void Start()
 		{
-			this.t_testlib = new BlueBack.TestLib.TestLib(new BlueBack.TestLib.Test_Base[]{
+			this.speedtester = new BlueBack.TestLib.SpeedTester.SpeedTester(new BlueBack.TestLib.SpeedTester.ITest[]{
 				new Test00(),
 			});
 		}
@@ -25,16 +25,16 @@ namespace Scenes
 		*/
 		private void Update()
 		{
-			this.t_testlib.RandomTest();
+			this.speedtester.RandomTest();
 		}
 
 		/** OnDestroy
 		*/
 		private void OnDestroy()
 		{
-			if(this.t_testlib != null){
-				this.t_testlib.Delete();
-				this.t_testlib = null;
+			if(this.speedtester != null){
+				this.speedtester.Delete();
+				this.speedtester = null;
 			}
 		}
 	}
