@@ -1,6 +1,6 @@
 # BlueBack.TestLib
-
 テスト用ライブラリ
+* 速度計測と「UI.Text」での表示。
 
 ## ライセンス
 MIT License
