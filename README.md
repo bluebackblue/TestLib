@@ -18,6 +18,10 @@ https://github.com/bluebackblue/TestLib.git?path=unity_TestLib/Assets/UPM
 * ボタン選択：「左上の＋ボタン」
 * リスト選択：Add package from git URL...
 * アドレスを追加「 https://github.com/bluebackblue/TestLib.git?path=unity_TestLib/Assets/UPM 」
+### 注
+Gitクライアンとがインストールされている必要がある。
+* https://docs.unity3d.com/ja/current/Manual/upm-git.html
+* https://git-scm.com/
 
 ## SpeedTester
 速度計測と「UI.Text」での表示。
