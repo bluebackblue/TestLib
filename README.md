@@ -13,11 +13,11 @@ Unity 2020.2.4f1
 https://github.com/bluebackblue/TestLib.git?path=unity_TestLib/Assets/UPM
 
 ## Unityへの追加方法
-Unity起動
-メニュー選択：「Window->Package Manager」
-ボタン選択：「左上の＋ボタン」
-リスト選択：Add package from git URL...
-アドレスを追加「https://github.com/bluebackblue/TestLib.git?path=unity_TestLib/Assets/UPM」
+* Unity起動
+* メニュー選択：「Window->Package Manager」
+* ボタン選択：「左上の＋ボタン」
+* リスト選択：Add package from git URL...
+* アドレスを追加「https://github.com/bluebackblue/TestLib.git?path=unity_TestLib/Assets/UPM」
 
 ## SpeedTester
 速度計測と「UI.Text」での表示。
