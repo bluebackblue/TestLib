@@ -158,4 +158,6 @@ public class Test_Int : BlueBack.TestLib.SpeedTester.ITest
 }
 ```
 
-![Sample00](https://github.com/bluebackblue/TestLib/blob/master/sample00.jpg)
+![Sample00](https://github.com/bluebackblue/TestLib/blob/master/sample00.png)
+![Sample01](/sample00.png)
+
