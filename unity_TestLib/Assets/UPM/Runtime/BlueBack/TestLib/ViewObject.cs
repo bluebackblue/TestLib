@@ -1,8 +1,8 @@
 ﻿
 
-/** TestLib
+/** BlueBack.TestLib
 */
-namespace TestLib
+namespace BlueBack.TestLib
 {
 	/** OnStartCallBackInterface
 	*/

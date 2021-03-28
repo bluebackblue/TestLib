@@ -10,13 +10,13 @@ namespace Scenes
 	{
 		/** t_testlib
 		*/
-		TestLib.TestLib t_testlib;
+		private BlueBack.TestLib.TestLib t_testlib;
 
 		/** Start
 		*/
 		private void Start()
 		{
-			this.t_testlib = new TestLib.TestLib(new TestLib.Test_Base[]{
+			this.t_testlib = new BlueBack.TestLib.TestLib(new BlueBack.TestLib.Test_Base[]{
 				new Test00(),
 			});
 		}

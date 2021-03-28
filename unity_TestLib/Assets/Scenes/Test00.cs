@@ -6,7 +6,7 @@ namespace Scenes
 {
 	/** Test00
 	*/
-	public class Test00 : TestLib.Test_Base
+	public class Test00 : BlueBack.TestLib.Test_Base
 	{
 		/** 計算結果。
 		*/
