@@ -19,7 +19,7 @@
     {
       "displayName": "FloatIntSpeedTest",
       "description": "FloatとIntの速度テスト",
-      "path": "Samples~/FloatIntSpeedTest"
+      "path": "Samples/FloatIntSpeedTest"
     }
   ]
 }

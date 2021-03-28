@@ -53,37 +53,35 @@ namespace BlueBack.TestLib.SpeedTester
 		/** テスト。
 
 			a_index		: テストリストのインデックス。
+			a_loop		: ループ回数。
 
 		*/
-		public void Test(int a_index)
+		public void Test(int a_index,int a_loop)
 		{
 			ITest t_test = this.test_list[a_index];
-
-			//前処理。
-			t_test.PreAction();
-
-			//計測開始。
-			float t_time = UnityEngine.Time.realtimeSinceStartup;
-			
-			//計測処理。
+			t_test.OnPreTestAction();
 			{
-				t_test.TestAction();
+				float t_time = UnityEngine.Time.realtimeSinceStartup;
+				{
+					for(int ii=0;ii<a_loop;ii++){
+						t_test.OnTestAction();
+					}
+				}
+				float t_delta_time = UnityEngine.Time.realtimeSinceStartup - t_time;
+				this.viewobject.text_list[a_index].text = t_test.OnTestResult(t_delta_time);
 			}
-
-			//計測終了。
-			float t_delta_time = UnityEngine.Time.realtimeSinceStartup - t_time;
-
-			//結果。
-			this.viewobject.text_list[a_index].text = t_test.Result(t_delta_time);
 		}
 
 		/** ランダムにテスト。
+
+			a_loop		: ループ回数。
+
 		*/
-		public void RandomTest()
+		public void RandomTest(int a_loop)
 		{
 			if(this.test_list != null){
 				if(this.test_list.Length > 0){
-					this.Test(UnityEngine.Random.Range(0,this.test_list.Length));
+					this.Test(UnityEngine.Random.Range(0,this.test_list.Length),a_loop);
 				}
 			}
 		}

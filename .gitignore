@@ -58,3 +58,5 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
+/unity_TestLib/Assets/UPM/package-lock.json.meta
+/unity_TestLib/Assets/UPM/package-lock.json
