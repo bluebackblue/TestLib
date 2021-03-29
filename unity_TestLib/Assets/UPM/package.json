@@ -1,7 +1,7 @@
 {
   "name": "blueback.testlib",
   "displayName": "TestLib",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "unity": "2020.1",
   "description": "テスト用ライブラリ",
   "author": {
@@ -14,9 +14,8 @@
   "dependencies": {},
   "samples": [
     {
-      "displayName": "SpeedTest Float Int",
-      "description": "FloatとIntの速度テスト",
-      "path": "Samples~/FloatIntSpeedTest"
+      "displayName": "SpeedTester_FloatInt",
+      "path": "Samples~/SpeedTester_FloatInt"
     }
   ]
 }

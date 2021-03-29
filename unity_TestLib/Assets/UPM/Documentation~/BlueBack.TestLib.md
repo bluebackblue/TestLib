@@ -1,2 +1,2 @@
 #BlueBack.TestLib
-テスト用ライブラリ
+https://github.com/bluebackblue/TestLib

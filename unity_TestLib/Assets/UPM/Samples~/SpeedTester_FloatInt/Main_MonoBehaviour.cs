@@ -4,9 +4,9 @@
 */
 namespace Samples.TestLib.FloatIntSpeedTest
 {
-	/** FloatIntSpeetTest
+	/** Main_MonoBehaviour
 	*/
-	public class FloatIntSpeetTest : UnityEngine.MonoBehaviour
+	public class Main_MonoBehaviour : UnityEngine.MonoBehaviour
 	{
 		/** speedtester
 		*/

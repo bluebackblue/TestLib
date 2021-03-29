@@ -1,6 +1,2 @@
-# TestLib
-テスト用ライブラリ
-
-## BlueBack.TestLib.SpeedTester
-速度計測
-
+#BlueBack.TestLib
+https://github.com/bluebackblue/TestLib
