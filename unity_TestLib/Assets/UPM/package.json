@@ -1,7 +1,7 @@
 {
   "name": "blueback.testlib",
-  "displayName": "TestLib",
-  "version": "0.0.3",
+  "displayName": "T5estLib",
+  "version": "0.0.5",
   "unity": "2020.2",
   "description": "テスト用ライブラリ",
   "author": {
