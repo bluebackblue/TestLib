@@ -1,20 +1,20 @@
 {
   "name": "blueback.testlib",
-  "displayName": "T5estLib",
-  "version": "0.0.5",
-  "unity": "2020.2",
+  "displayName": "TestLib",
+  "version": "0.0.6",
+  "unity": "2020.1",
   "description": "テスト用ライブラリ",
   "author": {
-    "name": "blueback",
+    "name": "BlueBack",
     "url": "https://github.com/bluebackblue"
   },
   "keywords": [
-    "test"
+    "test speedtest"
   ],
   "dependencies": {},
   "samples": [
     {
-      "displayName": "FloatIntSpeedTest",
+      "displayName": "SpeedTest Float Int",
       "description": "FloatとIntの速度テスト",
       "path": "Samples~/FloatIntSpeedTest"
     }
