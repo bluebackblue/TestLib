@@ -10,9 +10,9 @@ MIT License
 Unity 2020.2.4f1
 
 ## バージョン
-最新
+### 最新
 * https://github.com/bluebackblue/TestLib.git?path=unity_TestLib/Assets/UPM#0.0.7
-開発
+### 開発
 * https://github.com/bluebackblue/TestLib.git?path=unity_TestLib/Assets/UPM
 
 ## Unityへの追加方法
