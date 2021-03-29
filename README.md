@@ -6,21 +6,15 @@
 MIT License
 * https://github.com/bluebackblue/TestLib/blob/main/LICENSE
 
-## バージョン
-0.0.4
-
 ## 動作確認
 Unity 2020.2.4f1
-
-## URL
-https://github.com/bluebackblue/TestLib.git?path=unity_TestLib/Assets/UPM
 
 ## Unityへの追加方法
 * Unity起動
 * メニュー選択：「Window->Package Manager」
 * ボタン選択：「左上の＋ボタン」
 * リスト選択：Add package from git URL...
-* アドレスを追加「 https://github.com/bluebackblue/TestLib.git?path=unity_TestLib/Assets/UPM 」
+* アドレスを追加「 https://github.com/bluebackblue/TestLib.git?path=unity_TestLib/Assets/UPM#0.0.5 」
 ### 注
 Gitクライアントがインストールされている必要がある。
 * https://docs.unity3d.com/ja/current/Manual/upm-git.html
