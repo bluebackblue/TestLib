@@ -6,6 +6,9 @@
 MIT License
 * https://github.com/bluebackblue/TestLib/blob/main/LICENSE
 
+## バージョン
+0.0.4
+
 ## 動作確認
 Unity 2020.2.4f1
 
