@@ -2,6 +2,7 @@
 
 /** Editor
 */
+#if(UNITY_EDITOR)
 namespace Editor
 {
     /** CopySamples
@@ -20,7 +21,7 @@ namespace Editor
             s_process = new System.Diagnostics.Process();
             {
                 s_process.StartInfo.FileName = UnityEngine.Application.dataPath + "/Editor/CopySamples.bat";
-                s_process.StartInfo.Arguments = "";
+                s_process.StartInfo.Arguments = "TestLib";
                 s_process.StartInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Normal;
                 s_process.StartInfo.UseShellExecute = true;
                 s_process.Exited += ExitProcess;
@@ -39,4 +40,5 @@ namespace Editor
         }
     }
 }
+#endif
 
