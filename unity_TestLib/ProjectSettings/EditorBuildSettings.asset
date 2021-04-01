@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Samples/TestLib/SpeedTester_FloatInt/Sample.unity
+    path: Assets/Samples/TestLib/000/SpeedTester_FloatInt/Sample.unity
     guid: 961ca3d8a57d31943b3f672ed34f55ed
   m_configObjects: {}
