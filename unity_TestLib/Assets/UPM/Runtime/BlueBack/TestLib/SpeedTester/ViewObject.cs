@@ -8,9 +8,9 @@ namespace BlueBack.TestLib.SpeedTester
 	*/
 	public class ViewObject : CallBackInterface
 	{
-		/** config
+		/** param
 		*/
-		private Config config;
+		private Param param;
 
 		/** camera
 		*/
@@ -26,15 +26,15 @@ namespace BlueBack.TestLib.SpeedTester
 
 		/** constructor
 		*/
-		public ViewObject(Config a_config,int a_max)
+		public ViewObject(Param a_param,int a_max)
 		{
-			//config
-			this.config = a_config;
+			//param
+			this.param = a_param;
 
 			//gameobject
-			this.camera_gameobject = new UnityEngine.GameObject(a_config.CAMERA_NAME);
+			this.camera_gameobject = new UnityEngine.GameObject(a_param.camera_name);
 			UnityEngine.GameObject.DontDestroyOnLoad(this.camera_gameobject);
-			this.canvas_gameobject = new UnityEngine.GameObject(a_config.CANVAS_NAME);
+			this.canvas_gameobject = new UnityEngine.GameObject(a_param.canvas_name);
 			UnityEngine.GameObject.DontDestroyOnLoad(this.canvas_gameobject);
 
 			//Canvas_MonoBehaviour
@@ -48,8 +48,8 @@ namespace BlueBack.TestLib.SpeedTester
 			{
 				t_camera.Reset();
 				t_camera.clearFlags = UnityEngine.CameraClearFlags.SolidColor;
-				t_camera.backgroundColor = a_config.CAMERA_COLOR;
-				t_camera.depth = a_config.CAMERA_DEPTH;
+				t_camera.backgroundColor = a_param.camera_color;
+				t_camera.depth = a_param.camera_depth;
 			}
 
 			//Canvas
@@ -80,10 +80,10 @@ namespace BlueBack.TestLib.SpeedTester
 					this.text_list[ii] = t_text;
 					{
 						t_text.text = ii.ToString();
-						t_text.fontSize = a_config.CANVAS_FONTSIZE;
+						t_text.fontSize = a_param.canvas_fontsize;
 						t_text.resizeTextForBestFit = true;
 						t_text.font = t_font;
-						t_text.color = a_config.CANVAS_FONTCOLOR;
+						t_text.color = a_param.canvas_fontcolor;
 						t_text.alignment = UnityEngine.TextAnchor.UpperLeft;
 					}
 				}
@@ -96,10 +96,10 @@ namespace BlueBack.TestLib.SpeedTester
 		{
 			for(int ii=0;ii<text_list.Length;ii++){
 				
-				float t_x = UnityEngine.Screen.width * this.config.CANVAS_TEXT_OFFSET_X;
-				float t_y = UnityEngine.Screen.height * (this.config.CANVAS_TEXT_OFFSET_Y + ii * this.config.CANVAS_TEXT_H);
-				float t_w = UnityEngine.Screen.width * this.config.CANVAS_TEXT_W;
-				float t_h = UnityEngine.Screen.height * this.config.CANVAS_TEXT_H;
+				float t_x = UnityEngine.Screen.width * this.param.canvas_text_offset_x;
+				float t_y = UnityEngine.Screen.height * (this.param.canvas_text_offset_y + ii * this.param.canvas_text_h);
+				float t_w = UnityEngine.Screen.width * this.param.canvas_text_w;
+				float t_h = UnityEngine.Screen.height * this.param.canvas_text_h;
 				
 				UnityEngine.UI.Text t_text = this.text_list[ii];
 				t_text.rectTransform.localScale = new UnityEngine.Vector3(1.0f,1.0f,1.0f);

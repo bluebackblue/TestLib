@@ -21,19 +21,19 @@ namespace BlueBack.TestLib.SpeedTester
 			a_test_list	: テストリスト。
 
 		*/
-		public SpeedTester(ITest[] a_test_list,Config a_config = null)
+		public SpeedTester(ITest[] a_test_list,Param a_param = null)
 		{
-			//config
-			Config t_config = a_config;
-			if(t_config == null){
-				t_config = new Config();
+			//param
+			Param t_param = a_param;
+			if(t_param == null){
+				t_param = new Param();
 			}
 
 			//test_list
 			this.test_list = a_test_list;
 
 			//viewobject
-			this.viewobject = new ViewObject(t_config,a_test_list.Length);
+			this.viewobject = new ViewObject(t_param,a_test_list.Length);
 		}
 
 		/** 削除。
