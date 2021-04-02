@@ -1,4 +1,4 @@
-﻿{
+{
   "name": "blueback.testlib",
   "displayName": "TestLib",
   "version": "0.0.9",
@@ -16,6 +16,10 @@
     {
       "displayName": "SpeedTester_FloatInt",
       "path": "Samples~/SpeedTester_FloatInt"
+    },
+    {
+      "displayName": "SpeedTester_Enum",
+      "path": "Samples~/SpeedTester_Enum"
     }
   ]
 }
