@@ -12,16 +12,51 @@ namespace Samples.TestLib.SpeedTester_Enum
 		*/
 		private enum ActionType
 		{
-			A = 0,
-			B = 1,
-			C = 2,
-			D = 3,
-			E = 4,
-			F = 5,
-			G = 6,
-			H = 7,
-			I = 8,
-			MAX = 9,
+			AA = 0,
+			AB,
+			AC,
+			AD,
+			AE,
+			AF,
+			AG,
+			AH,
+			AI,
+			AJ,
+
+			BA,
+			BB,
+			BC,
+			BD,
+			BE,
+			BF,
+			BG,
+			BH,
+			BI,
+			BJ,
+
+			CA,
+			CB,
+			CC,
+			CD,
+			CE,
+			CF,
+			CG,
+			CH,
+			CI,
+			CJ,
+
+			DA,
+			DB,
+			DC,
+			DD,
+			DE,
+			DF,
+			DG,
+			DH,
+			DI,
+			DJ,
+
+			MAX,
 		}
 
 		/** indexlist
@@ -37,7 +72,7 @@ namespace Samples.TestLib.SpeedTester_Enum
 		public void OnPreTestAction()
 		{
 			for(int ii=0;ii<this.indexlist.Length;ii++){
-				this.indexlist[ii] = (ActionType)(ii % (int)ActionType.MAX);
+				this.indexlist[ii] = (ActionType)UnityEngine.Random.Range(0,(int)ActionType.MAX);
 			}
 
 			this.result = 0;
@@ -49,39 +84,73 @@ namespace Samples.TestLib.SpeedTester_Enum
 		{
 			for(int ii=0;ii<this.indexlist.Length;ii++){
 				switch(this.indexlist[ii]){
-				case ActionType.A:
+				case ActionType.AA:
+				case ActionType.BA:
+				case ActionType.CA:
+				case ActionType.DA:
 					{
 						this.result += 10;
 					}break;
-				case ActionType.B:
+				case ActionType.AB:
+				case ActionType.BB:
+				case ActionType.CB:
+				case ActionType.DB:
 					{
 						this.result += 11;
 					}break;
-				case ActionType.C:
+				case ActionType.AC:
+				case ActionType.BC:
+				case ActionType.CC:
+				case ActionType.DC:
 					{
 						this.result += 12;
 					}break;
-				case ActionType.D:
+				case ActionType.AD:
+				case ActionType.BD:
+				case ActionType.CD:
+				case ActionType.DD:
 					{
 						this.result += 13;
 					}break;
-				case ActionType.E:
+				case ActionType.AE:
+				case ActionType.BE:
+				case ActionType.CE:
+				case ActionType.DE:
 					{
 						this.result += 14;
 					}break;
-				case ActionType.F:
+				case ActionType.AF:
+				case ActionType.BF:
+				case ActionType.CF:
+				case ActionType.DF:
 					{
 						this.result += 15;
 					}break;
-				case ActionType.G:
+				case ActionType.AG:
+				case ActionType.BG:
+				case ActionType.CG:
+				case ActionType.DG:
 					{
 						this.result += 16;
 					}break;
-				case ActionType.H:
+				case ActionType.AH:
+				case ActionType.BH:
+				case ActionType.CH:
+				case ActionType.DH:
 					{
 						this.result += 17;
 					}break;
-				case ActionType.I:
+				case ActionType.AI:
+				case ActionType.BI:
+				case ActionType.CI:
+				case ActionType.DI:
+					{
+						this.result += 18;
+					}break;
+				case ActionType.AJ:
+				case ActionType.BJ:
+				case ActionType.CJ:
+				case ActionType.DJ:
 					{
 						this.result += 18;
 					}break;

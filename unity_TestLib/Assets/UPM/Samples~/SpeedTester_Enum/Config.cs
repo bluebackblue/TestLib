@@ -10,7 +10,7 @@ namespace Samples.TestLib.SpeedTester_Enum
 	{
 		/** MAX
 		*/
-		public const int MAX = 10000;
+		public const int MAX = 1000;
 
 		/** LOOP
 		*/
