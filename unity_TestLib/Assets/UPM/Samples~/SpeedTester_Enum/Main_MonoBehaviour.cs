@@ -1,8 +1,8 @@
 
 
-/** Samples.TestLib.SpeedTester_FloatInt
+/** Samples.TestLib.SpeedTester_Enum
 */
-namespace Samples.TestLib.SpeedTester_FloatInt
+namespace Samples.TestLib.SpeedTester_Enum
 {
 	/** Main_MonoBehaviour
 	*/
@@ -17,8 +17,8 @@ namespace Samples.TestLib.SpeedTester_FloatInt
 		private void Start()
 		{
 			this.speedtester = new BlueBack.TestLib.SpeedTester.SpeedTester(new BlueBack.TestLib.SpeedTester.ITest[]{
-				new Test_Float(),
-				new Test_Int(),
+				new Test_ConstInt(),
+				new Test_Enum(),
 			});
 		}
 

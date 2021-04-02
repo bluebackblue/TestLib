@@ -1,8 +1,8 @@
 
 
-/** Samples.TestLib.FloatIntSpeedTest
+/** Samples.TestLib.SpeedTester_FloatInt
 */
-namespace Samples.TestLib.FloatIntSpeedTest
+namespace Samples.TestLib.SpeedTester_FloatInt
 {
 	/** Test_Float
 	*/

@@ -1,8 +1,8 @@
 
 
-/** Samples.TestLib.SpeedTester_FloatInt
+/** Samples.TestLib.SpeedTester_Enum
 */
-namespace Samples.TestLib.SpeedTester_FloatInt
+namespace Samples.TestLib.SpeedTester_Enum
 {
 	/** Config
 	*/
@@ -14,7 +14,7 @@ namespace Samples.TestLib.SpeedTester_FloatInt
 
 		/** LOOP
 		*/
-		public const int LOOP = 10000;
+		public const int LOOP = 100000;
 	}
 }
 
