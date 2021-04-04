@@ -1,6 +1,6 @@
 # BlueBack.TestLib
 テスト用ライブラリ
-* 速度計測と「UI.Text」での表示。
+* 速度計測と計測結果の画面表示。
 
 ## ライセンス
 MIT License
@@ -11,7 +11,7 @@ Unity 2020.2.4f1
 
 ## URL
 ### 最新
-* https://github.com/bluebackblue/TestLib.git?path=unity_TestLib/Assets/UPM#0.0.9
+* https://github.com/bluebackblue/TestLib.git?path=unity_TestLib/Assets/UPM#0.0.10
 ### 開発
 * https://github.com/bluebackblue/TestLib.git?path=unity_TestLib/Assets/UPM
 
@@ -27,10 +27,7 @@ Gitクライアントがインストールされている必要がある。
 * https://docs.unity3d.com/ja/current/Manual/upm-git.html
 * https://git-scm.com/
 
-## SpeedTester
-速度計測と「UI.Text」での表示。
-
-### サンプル
+## サンプル
 
 floatとintでの処理負荷を比較するサンプル。
 
