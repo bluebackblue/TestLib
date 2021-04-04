@@ -26,14 +26,30 @@ namespace BlueBack.TestLib
 		}
 		#endif
 
+		/** Assert
+		*/
+		#if(DEF_BLUEBACK_TESTLIB_ASSERT)
+		public static void Assert(bool a_flag,string a_message)
+		{
+			if(a_flag != true){
+				Config.ERRORPROC(null,a_message);
+			}
+		}
+		#endif
+
 		/** ErrorProc
 		*/
 		#if(DEF_BLUEBACK_TESTLIB_ASSERT)
-		public static void ErrorProc(System.Exception a_exception)
+		public static void ErrorProc(System.Exception a_exception,string a_message)
 		{
+			if(a_message != null){
+				UnityEngine.Debug.LogError(a_message);
+			}
+
 			if(a_exception != null){
 				UnityEngine.Debug.LogError(a_exception.ToString());
 			}
+
 			UnityEngine.Debug.Assert(false);
 		}
 		#endif
