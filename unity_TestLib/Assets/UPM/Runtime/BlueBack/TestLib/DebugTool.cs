@@ -21,7 +21,7 @@ namespace BlueBack.TestLib
 		public static void Assert(bool a_flag,System.Exception a_exception = null)
 		{
 			if(a_flag != true){
-				Config.ERRORPROC(a_exception);
+				Config.ERRORPROC(a_exception,null);
 			}
 		}
 		#endif
