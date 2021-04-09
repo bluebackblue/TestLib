@@ -1,20 +1,19 @@
 # BlueBack.TestLib
 テスト用ライブラリ
-* 速度計測と計測結果の画面表示。
+* 速度計測と計測結果の画面表示
 
 ## ライセンス
 MIT License
 * https://github.com/bluebackblue/TestLib/blob/main/LICENSE
 
 ## 外部依存 / 使用ライセンス等
-
 ### サンプルのみ
 * https://github.com/bluebackblue/AssetLib
 
 ## 動作確認
-Unity 2020.2.4f1
+Unity 2020.2.0b14
 
-## URL
+## UPM
 ### 最新
 * https://github.com/bluebackblue/TestLib.git?path=unity_TestLib/Assets/UPM#0.0.11
 ### 開発
@@ -25,17 +24,14 @@ Unity 2020.2.4f1
 * メニュー選択：「Window->Package Manager」
 * ボタン選択：「左上の＋ボタン」
 * リスト選択：「Add package from git URL...」
-* 上記のURLを追加「 https://github.com/～～/UPM#バージョン 」
-
+* 上記UPMのURLを追加「 https://github.com/～～/UPM#バージョン 」
 ### 注
 Gitクライアントがインストールされている必要がある。
 * https://docs.unity3d.com/ja/current/Manual/upm-git.html
 * https://git-scm.com/
 
-## サンプル
-
+## 例
 floatとintでの処理負荷を比較するサンプル。
-
 ```
 /** FloatIntSpeetTest
 */
@@ -44,7 +40,7 @@ public class FloatIntSpeetTest : UnityEngine.MonoBehaviour
 	/** speedtester
 	*/
 	BlueBack.TestLib.SpeedTester.SpeedTester speedtester;
-	
+
 	/** Start
 	*/
 	private void Start()
@@ -54,7 +50,7 @@ public class FloatIntSpeetTest : UnityEngine.MonoBehaviour
 			new Test_Int(),
 		});
 	}
-	
+
 	/** Update
 	*/
 	private void Update()
@@ -63,7 +59,6 @@ public class FloatIntSpeetTest : UnityEngine.MonoBehaviour
 	}
 }
 ```
-
 「OnTestAction」内でリストから取得したfloatを足し続ける。
 ```
 /** Test_Float
@@ -105,7 +100,7 @@ public class Test_Float : BlueBack.TestLib.SpeedTester.ITest
 
 	/** [BlueBack.TestLib.SpeedTester.ITest.PreTest]計測終了直後に呼び出される。
 
-		a_delta_time		: 処理秒数。
+		a_delta_time	: 処理秒数。
 		return			: 表示文字列。
 
 	*/
@@ -115,7 +110,6 @@ public class Test_Float : BlueBack.TestLib.SpeedTester.ITest
 	}
 }
 ```
-
 「OnTestAction」内でリストから取得したintを足し続ける。
 ```
 /** Test_Int
@@ -157,7 +151,7 @@ public class Test_Int : BlueBack.TestLib.SpeedTester.ITest
 
 	/** [BlueBack.TestLib.SpeedTester.ITest.PreTest]計測終了直後に呼び出される。
 
-		a_delta_time		: 処理秒数。
+		a_delta_time	: 処理秒数。
 		return			: 表示文字列。
 
 	*/
@@ -167,6 +161,5 @@ public class Test_Int : BlueBack.TestLib.SpeedTester.ITest
 	}
 }
 ```
-
 ![Sample01](/sample00.png)
 
