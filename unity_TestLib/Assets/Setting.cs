@@ -81,7 +81,7 @@ public class Setting
 			return new string[]{
 				"## 外部依存 / 使用ライセンス等",
 				"### サンプルのみ",
-				"* https://github.com/bluebackblue/AssetLib",
+				//"* https://github.com/bluebackblue/AssetLib",
 			};
 		},
 
@@ -207,7 +207,7 @@ public class Setting
 				"	/** [BlueBack.TestLib.SpeedTester.ITest.PreTest]計測終了直後に呼び出される。",
 				"",
 				"		a_delta_time	: 処理秒数。",
-				"		return			: 表示文字列。",
+				"		return		: 表示文字列。",
 				"",
 				"	*/",
 				"	public string OnTestResult(float a_delta_time)",
@@ -262,7 +262,7 @@ public class Setting
 				"	/** [BlueBack.TestLib.SpeedTester.ITest.PreTest]計測終了直後に呼び出される。",
 				"",
 				"		a_delta_time	: 処理秒数。",
-				"		return			: 表示文字列。",
+				"		return		: 表示文字列。",
 				"",
 				"	*/",
 				"	public string OnTestResult(float a_delta_time)",

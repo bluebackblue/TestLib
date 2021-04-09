@@ -8,7 +8,6 @@ MIT License
 
 ## 外部依存 / 使用ライセンス等
 ### サンプルのみ
-* https://github.com/bluebackblue/AssetLib
 
 ## 動作確認
 Unity 2020.2.0b14
@@ -101,7 +100,7 @@ public class Test_Float : BlueBack.TestLib.SpeedTester.ITest
 	/** [BlueBack.TestLib.SpeedTester.ITest.PreTest]計測終了直後に呼び出される。
 
 		a_delta_time	: 処理秒数。
-		return			: 表示文字列。
+		return		: 表示文字列。
 
 	*/
 	public string OnTestResult(float a_delta_time)
@@ -152,7 +151,7 @@ public class Test_Int : BlueBack.TestLib.SpeedTester.ITest
 	/** [BlueBack.TestLib.SpeedTester.ITest.PreTest]計測終了直後に呼び出される。
 
 		a_delta_time	: 処理秒数。
-		return			: 表示文字列。
+		return		: 表示文字列。
 
 	*/
 	public string OnTestResult(float a_delta_time)
