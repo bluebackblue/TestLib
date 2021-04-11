@@ -7,14 +7,13 @@ MIT License
 * https://github.com/bluebackblue/TestLib/blob/main/LICENSE
 
 ## 外部依存 / 使用ライセンス等
-### サンプルのみ
 
 ## 動作確認
 Unity 2020.2.0b14
 
 ## UPM
 ### 最新
-* https://github.com/bluebackblue/TestLib.git?path=unity_TestLib/Assets/UPM#0.0.12
+* https://github.com/bluebackblue/TestLib.git?path=unity_TestLib/Assets/UPM#0.0.13
 ### 開発
 * https://github.com/bluebackblue/TestLib.git?path=unity_TestLib/Assets/UPM
 
