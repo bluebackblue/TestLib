@@ -13,7 +13,7 @@ Unity 2021.1.11f1
 
 ## UPM
 ### 最新
-* https://github.com/bluebackblue/TestLib.git?path=unity_TestLib/Assets/UPM#0.0.15
+* https://github.com/bluebackblue/TestLib.git?path=unity_TestLib/Assets/UPM#0.0.16
 ### 開発
 * https://github.com/bluebackblue/TestLib.git?path=unity_TestLib/Assets/UPM
 
