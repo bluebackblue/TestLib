@@ -6,7 +6,7 @@ namespace BlueBack.TestLib.SpeedTester
 {
 	/** SpeedTester
 	*/
-	public class SpeedTester
+	public sealed class SpeedTester
 	{
 		/**viewobject
 		*/

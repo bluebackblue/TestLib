@@ -28,9 +28,9 @@ namespace BlueBack.TestLib.Editor
 				DebugTool.EditorLogError("GetLastReleaseNameFromGitHub : connect error");
 				#endif
 			}else if(t_version.Length <= 0){
-				UnityEditor.PackageManager.Client.Add("https://github.com/bluebackblue/TestLib.git?path=unity_TestLib/Assets/UPM");
+				UnityEditor.PackageManager.Client.Add("https://github.com/bluebackblue/TestLib.git?path=BlueBackTestLib/Assets/UPM");
 			}else{
-				UnityEditor.PackageManager.Client.Add("https://github.com/bluebackblue/TestLib.git?path=unity_TestLib/Assets/UPM#" + t_version);
+				UnityEditor.PackageManager.Client.Add("https://github.com/bluebackblue/TestLib.git?path=BlueBackTestLib/Assets/UPM#" + t_version);
 			}
 		}
 

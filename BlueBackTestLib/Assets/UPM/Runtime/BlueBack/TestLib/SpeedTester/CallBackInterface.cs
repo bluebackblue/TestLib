@@ -10,7 +10,7 @@ namespace BlueBack.TestLib.SpeedTester
 	{
 		/** OnStart
 		*/
-		public void OnStart();
+		void OnStart();
 	}
 }
 

@@ -6,7 +6,7 @@ namespace BlueBack.TestLib.SpeedTester
 {
 	/** Canvas_MonoBehaviour
 	*/
-	public class Canvas_MonoBehaviour : UnityEngine.MonoBehaviour
+	public sealed class Canvas_MonoBehaviour : UnityEngine.MonoBehaviour
 	{
 		/** callback
 		*/

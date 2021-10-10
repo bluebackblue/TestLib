@@ -6,7 +6,7 @@ namespace BlueBack.TestLib.SpeedTester
 {
 	/** ViewObject
 	*/
-	public class ViewObject : CallBackInterface
+	public sealed class ViewObject : CallBackInterface
 	{
 		/** param
 		*/
