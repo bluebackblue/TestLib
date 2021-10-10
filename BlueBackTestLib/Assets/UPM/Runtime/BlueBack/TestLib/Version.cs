@@ -13,7 +13,7 @@ namespace BlueBack.TestLib
 {
 	/** Version
 	*/
-	public class Version
+	public static class Version
 	{
 		/** packagename
 		*/

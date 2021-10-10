@@ -10,7 +10,7 @@ namespace BlueBack.TestLib.SpeedTester
 	{
 		/** callback
 		*/
-		public CallBackInterface callback;
+		public CallBack_Base callback;
 
 		/** callback
 		*/

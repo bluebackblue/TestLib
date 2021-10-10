@@ -15,7 +15,7 @@ namespace BlueBack.TestLib.Editor
 	/** UpdatePackage
 	*/
 	#if(!DEF_USER_BLUEBACK_TESTLIB)
-	public class UpdatePackage
+	public static class UpdatePackage
 	{
 		/** MenuItem_BlueBack_TestLib_UpdatePackage
 		*/

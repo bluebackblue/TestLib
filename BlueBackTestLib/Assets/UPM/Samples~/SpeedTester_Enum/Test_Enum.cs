@@ -6,7 +6,7 @@ namespace Samples.TestLib.SpeedTester_Enum
 {
 	/** Test_Enum
 	*/
-	public class Test_Enum : BlueBack.TestLib.SpeedTester.ITest
+	public class Test_Enum : BlueBack.TestLib.SpeedTester.Test_Base
 	{
 		/** ActionType
 		*/
@@ -67,7 +67,7 @@ namespace Samples.TestLib.SpeedTester_Enum
 		*/
 		private int result;
 
-		/** [BlueBack.TestLib.SpeedTester.ITest.PreTest]計測直前に呼び出される。
+		/** [BlueBack.TestLib.SpeedTester.Test_Base.PreTest]計測直前に呼び出される。
 		*/
 		public void OnPreTestAction()
 		{
@@ -78,7 +78,7 @@ namespace Samples.TestLib.SpeedTester_Enum
 			this.result = 0;
 		}
 
-		/** [BlueBack.TestLib.SpeedTester.ITest.PreTest]計測処理。
+		/** [BlueBack.TestLib.SpeedTester.Test_Base.PreTest]計測処理。
 		*/
 		public void OnTestAction()
 		{
@@ -158,7 +158,7 @@ namespace Samples.TestLib.SpeedTester_Enum
 			}
 		}
 
-		/** [BlueBack.TestLib.SpeedTester.ITest.PreTest]計測終了直後に呼び出される。
+		/** [BlueBack.TestLib.SpeedTester.Test_Base.PreTest]計測終了直後に呼び出される。
 
 			a_delta_time		: 処理秒数。
 			return			: 表示文字列。

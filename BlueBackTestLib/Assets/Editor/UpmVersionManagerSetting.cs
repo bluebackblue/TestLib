@@ -22,10 +22,10 @@ namespace Editor
 		static UpmVersionManagerSetting()
 		{
 			//Object_RootUssUxml
-			BlueBack.UpmVersionManager.Editor.Object_RootUssUxml.CreateFile(false);
+			BlueBack.UpmVersionManager.Editor.Object_RootUssUxml.Save(false);
 
-			BlueBack.UpmVersionManager.Editor.Object_Setting.CreateInstance();
-			BlueBack.UpmVersionManager.Editor.Object_Setting.Param t_param = new BlueBack.UpmVersionManager.Editor.Object_Setting.Param();
+			BlueBack.UpmVersionManager.Editor.Object_Setting.s_param = new BlueBack.UpmVersionManager.Editor.Object_Setting.Param();
+			BlueBack.UpmVersionManager.Editor.Object_Setting.Param t_param = BlueBack.UpmVersionManager.Editor.Object_Setting.s_param;
 			{
 				//author_name
 				t_param.author_name = "BlueBack";
@@ -39,6 +39,9 @@ namespace Editor
 				//git_path
 				t_param.git_path = "BlueBackTestLib/Assets/UPM";
 
+				//git_repos
+				t_param.git_repos = "UpmTestLib";
+
 				//package_name
 				t_param.package_name = "TestLib";
 
@@ -50,7 +53,7 @@ namespace Editor
 
 				//packagejson_keyword
 				t_param.packagejson_keyword = new string[]{
-					"test"
+					"test",
 				};
 
 				//packagejson_dependencies
@@ -114,7 +117,7 @@ namespace Editor
 					//概要。
 					(in BlueBack.UpmVersionManager.Editor.Object_Setting.Creator_Argument a_argument) => {
 						return new string[]{
-							"# " + a_argument.param.author_name + "." + a_argument.param.package_name,
+							"# " + t_param.author_name + "." + t_param.package_name,
 							"テスト用ライブラリ",
 							"* 速度計測と計測結果の画面表示",
 						};
@@ -125,7 +128,7 @@ namespace Editor
 						return new string[]{
 							"## ライセンス",
 							"MIT License",
-							"* " + a_argument.param.git_url + a_argument.param.git_author + "/" + a_argument.param.package_name + "/blob/main/LICENSE",
+							"* " + t_param.git_url + t_param.git_author + "/" + t_param.package_name + "/blob/main/LICENSE",
 						};
 					},
 
@@ -150,9 +153,9 @@ namespace Editor
 						return new string[]{
 							"## UPM",
 							"### 最新",
-							"* " + a_argument.param.git_url + a_argument.param.git_author + "/" + a_argument.param.package_name + ".git?path=" + a_argument.param.git_path + "#" + a_argument.version,
+							"* " + t_param.git_url + t_param.git_author + "/" + t_param.git_repos + ".git?path=" + t_param.git_path + "#" + a_argument.version,
 							"### 開発",
-							"* " + a_argument.param.git_url + a_argument.param.git_author + "/" + a_argument.param.package_name + ".git?path=" + a_argument.param.git_path,
+							"* " + t_param.git_url + t_param.git_author + "/" + t_param.git_repos + ".git?path=" + t_param.git_path,
 						};
 					},
 
@@ -194,7 +197,7 @@ namespace Editor
 							"	*/",
 							"	private void Start()",
 							"	{",
-							"		this.speedtester = new BlueBack.TestLib.SpeedTester.SpeedTester(new BlueBack.TestLib.SpeedTester.ITest[]{",
+							"		this.speedtester = new BlueBack.TestLib.SpeedTester.SpeedTester(new BlueBack.TestLib.SpeedTester.Test_Base[]{",
 							"			new Test_Float(),",
 							"			new Test_Int(),",
 							"		});",
@@ -217,7 +220,7 @@ namespace Editor
 							"```",
 							"/** Test_Float",
 							"*/",
-							"public class Test_Float : BlueBack.TestLib.SpeedTester.ITest",
+							"public class Test_Float : BlueBack.TestLib.SpeedTester.Test_Base",
 							"{",
 							"	/** list",
 							"	*/",
@@ -227,7 +230,7 @@ namespace Editor
 							"	*/",
 							"	private float result;",
 							"",
-							"	/** [BlueBack.TestLib.SpeedTester.ITest.PreTest]計測直前に呼び出される。",
+							"	/** [BlueBack.TestLib.SpeedTester.Test_Base.PreTest]計測直前に呼び出される。",
 							"	*/",
 							"	public void OnPreTestAction()",
 							"	{",
@@ -241,7 +244,7 @@ namespace Editor
 							"		this.result = 0.0f;",
 							"	}",
 							"",
-							"	/** [BlueBack.TestLib.SpeedTester.ITest.PreTest]計測処理。",
+							"	/** [BlueBack.TestLib.SpeedTester.Test_Base.PreTest]計測処理。",
 							"	*/",
 							"	public void OnTestAction()",
 							"	{",
@@ -252,7 +255,7 @@ namespace Editor
 							"		this.result = t_total;",
 							"	}",
 							"",
-							"	/** [BlueBack.TestLib.SpeedTester.ITest.PreTest]計測終了直後に呼び出される。",
+							"	/** [BlueBack.TestLib.SpeedTester.Test_Base.PreTest]計測終了直後に呼び出される。",
 							"",
 							"		a_delta_time	: 処理秒数。",
 							"		return		: 表示文字列。",
@@ -272,7 +275,7 @@ namespace Editor
 							"```",
 							"/** Test_Int",
 							"*/",
-							"public class Test_Int : BlueBack.TestLib.SpeedTester.ITest",
+							"public class Test_Int : BlueBack.TestLib.SpeedTester.Test_Base",
 							"{",
 							"	/** list",
 							"	*/",
@@ -282,7 +285,7 @@ namespace Editor
 							"	*/",
 							"	private int result;",
 							"",
-							"	/** [BlueBack.TestLib.SpeedTester.ITest.PreTest]計測直前に呼び出される。",
+							"	/** [BlueBack.TestLib.SpeedTester.Test_Base.PreTest]計測直前に呼び出される。",
 							"	*/",
 							"	public void OnPreTestAction()",
 							"	{",
@@ -296,7 +299,7 @@ namespace Editor
 							"		this.result = 0;",
 							"	}",
 							"",
-							"	/** [BlueBack.TestLib.SpeedTester.ITest.PreTest]計測処理。",
+							"	/** [BlueBack.TestLib.SpeedTester.Test_Base.PreTest]計測処理。",
 							"	*/",
 							"	public void OnTestAction()",
 							"	{",
@@ -307,7 +310,7 @@ namespace Editor
 							"		this.result = t_total;",
 							"	}",
 							"",
-							"	/** [BlueBack.TestLib.SpeedTester.ITest.PreTest]計測終了直後に呼び出される。",
+							"	/** [BlueBack.TestLib.SpeedTester.Test_Base.PreTest]計測終了直後に呼び出される。",
 							"",
 							"		a_delta_time	: 処理秒数。",
 							"		return		: 表示文字列。",
@@ -320,16 +323,11 @@ namespace Editor
 							"}",
 							"```",
 
-
 							"![Sample01](/sample00.png)",
-
 						};
 					},
-
 				};
 			}
-
-			BlueBack.UpmVersionManager.Editor.Object_Setting.GetInstance().Set(t_param);
 		}
 	}
 }

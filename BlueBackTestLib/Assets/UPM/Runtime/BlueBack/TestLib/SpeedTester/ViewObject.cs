@@ -6,7 +6,7 @@ namespace BlueBack.TestLib.SpeedTester
 {
 	/** ViewObject
 	*/
-	public sealed class ViewObject : CallBackInterface
+	public sealed class ViewObject : CallBack_Base
 	{
 		/** param
 		*/
@@ -90,7 +90,7 @@ namespace BlueBack.TestLib.SpeedTester
 			}
 		}
 
-		/** OnStart
+		/** [BlueBack.TestLib.SpeedTester.CallBack_Base]OnStart
 		*/
 		public void OnStart()
 		{

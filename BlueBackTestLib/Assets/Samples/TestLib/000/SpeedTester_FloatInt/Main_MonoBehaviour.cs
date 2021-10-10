@@ -16,7 +16,7 @@ namespace Samples.TestLib.SpeedTester_FloatInt
 		*/
 		private void Start()
 		{
-			this.speedtester = new BlueBack.TestLib.SpeedTester.SpeedTester(new BlueBack.TestLib.SpeedTester.ITest[]{
+			this.speedtester = new BlueBack.TestLib.SpeedTester.SpeedTester(new BlueBack.TestLib.SpeedTester.Test_Base[]{
 				new Test_Float(),
 				new Test_Int(),
 			});

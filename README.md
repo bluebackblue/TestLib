@@ -18,9 +18,9 @@ Unity 2021.1.11f1
 
 ## UPM
 ### 最新
-* https://github.com/bluebackblue/TestLib.git?path=unity_TestLib/Assets/UPM#0.0.18
+* https://github.com/bluebackblue/UpmTestLib.git?path=BlueBackTestLib/Assets/UPM#0.0.19
 ### 開発
-* https://github.com/bluebackblue/TestLib.git?path=unity_TestLib/Assets/UPM
+* https://github.com/bluebackblue/UpmTestLib.git?path=BlueBackTestLib/Assets/UPM
 
 ## Unityへの追加方法
 * Unity起動
@@ -48,7 +48,7 @@ public class FloatIntSpeetTest : UnityEngine.MonoBehaviour
 	*/
 	private void Start()
 	{
-		this.speedtester = new BlueBack.TestLib.SpeedTester.SpeedTester(new BlueBack.TestLib.SpeedTester.ITest[]{
+		this.speedtester = new BlueBack.TestLib.SpeedTester.SpeedTester(new BlueBack.TestLib.SpeedTester.Test_Base[]{
 			new Test_Float(),
 			new Test_Int(),
 		});
@@ -66,7 +66,7 @@ public class FloatIntSpeetTest : UnityEngine.MonoBehaviour
 ```
 /** Test_Float
 */
-public class Test_Float : BlueBack.TestLib.SpeedTester.ITest
+public class Test_Float : BlueBack.TestLib.SpeedTester.Test_Base
 {
 	/** list
 	*/
@@ -76,7 +76,7 @@ public class Test_Float : BlueBack.TestLib.SpeedTester.ITest
 	*/
 	private float result;
 
-	/** [BlueBack.TestLib.SpeedTester.ITest.PreTest]計測直前に呼び出される。
+	/** [BlueBack.TestLib.SpeedTester.Test_Base.PreTest]計測直前に呼び出される。
 	*/
 	public void OnPreTestAction()
 	{
@@ -90,7 +90,7 @@ public class Test_Float : BlueBack.TestLib.SpeedTester.ITest
 		this.result = 0.0f;
 	}
 
-	/** [BlueBack.TestLib.SpeedTester.ITest.PreTest]計測処理。
+	/** [BlueBack.TestLib.SpeedTester.Test_Base.PreTest]計測処理。
 	*/
 	public void OnTestAction()
 	{
@@ -101,7 +101,7 @@ public class Test_Float : BlueBack.TestLib.SpeedTester.ITest
 		this.result = t_total;
 	}
 
-	/** [BlueBack.TestLib.SpeedTester.ITest.PreTest]計測終了直後に呼び出される。
+	/** [BlueBack.TestLib.SpeedTester.Test_Base.PreTest]計測終了直後に呼び出される。
 
 		a_delta_time	: 処理秒数。
 		return		: 表示文字列。
@@ -117,7 +117,7 @@ public class Test_Float : BlueBack.TestLib.SpeedTester.ITest
 ```
 /** Test_Int
 */
-public class Test_Int : BlueBack.TestLib.SpeedTester.ITest
+public class Test_Int : BlueBack.TestLib.SpeedTester.Test_Base
 {
 	/** list
 	*/
@@ -127,7 +127,7 @@ public class Test_Int : BlueBack.TestLib.SpeedTester.ITest
 	*/
 	private int result;
 
-	/** [BlueBack.TestLib.SpeedTester.ITest.PreTest]計測直前に呼び出される。
+	/** [BlueBack.TestLib.SpeedTester.Test_Base.PreTest]計測直前に呼び出される。
 	*/
 	public void OnPreTestAction()
 	{
@@ -141,7 +141,7 @@ public class Test_Int : BlueBack.TestLib.SpeedTester.ITest
 		this.result = 0;
 	}
 
-	/** [BlueBack.TestLib.SpeedTester.ITest.PreTest]計測処理。
+	/** [BlueBack.TestLib.SpeedTester.Test_Base.PreTest]計測処理。
 	*/
 	public void OnTestAction()
 	{
@@ -152,7 +152,7 @@ public class Test_Int : BlueBack.TestLib.SpeedTester.ITest
 		this.result = t_total;
 	}
 
-	/** [BlueBack.TestLib.SpeedTester.ITest.PreTest]計測終了直後に呼び出される。
+	/** [BlueBack.TestLib.SpeedTester.Test_Base.PreTest]計測終了直後に呼び出される。
 
 		a_delta_time	: 処理秒数。
 		return		: 表示文字列。

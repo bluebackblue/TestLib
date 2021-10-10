@@ -14,14 +14,14 @@ namespace BlueBack.TestLib.SpeedTester
 
 		/** test_list
 		*/
-		private ITest[] test_list;
+		private Test_Base[] test_list;
 
 		/** constructor
 
 			a_test_list	: テストリスト。
 
 		*/
-		public SpeedTester(ITest[] a_test_list,Param a_param = null)
+		public SpeedTester(Test_Base[] a_test_list,Param a_param = null)
 		{
 			//param
 			Param t_param = a_param;
@@ -58,7 +58,7 @@ namespace BlueBack.TestLib.SpeedTester
 		*/
 		public void Test(int a_index,int a_loop)
 		{
-			ITest t_test = this.test_list[a_index];
+			Test_Base t_test = this.test_list[a_index];
 			t_test.OnPreTestAction();
 			{
 				float t_time = UnityEngine.Time.realtimeSinceStartup;

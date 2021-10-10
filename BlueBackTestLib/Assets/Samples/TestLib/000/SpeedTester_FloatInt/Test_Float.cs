@@ -6,7 +6,7 @@ namespace Samples.TestLib.SpeedTester_FloatInt
 {
 	/** Test_Float
 	*/
-	public class Test_Float : BlueBack.TestLib.SpeedTester.ITest
+	public class Test_Float : BlueBack.TestLib.SpeedTester.Test_Base
 	{
 		/** list
 		*/
@@ -16,7 +16,7 @@ namespace Samples.TestLib.SpeedTester_FloatInt
 		*/
 		private float result;
 
-		/** [BlueBack.TestLib.SpeedTester.ITest.PreTest]計測直前に呼び出される。
+		/** [BlueBack.TestLib.SpeedTester.Test_Base.PreTest]計測直前に呼び出される。
 		*/
 		public void OnPreTestAction()
 		{
@@ -30,7 +30,7 @@ namespace Samples.TestLib.SpeedTester_FloatInt
 			this.result = 0.0f;
 		}
 
-		/** [BlueBack.TestLib.SpeedTester.ITest.PreTest]計測処理。
+		/** [BlueBack.TestLib.SpeedTester.Test_Base.PreTest]計測処理。
 		*/
 		public void OnTestAction()
 		{
@@ -41,7 +41,7 @@ namespace Samples.TestLib.SpeedTester_FloatInt
 			this.result = t_total;
 		}
 
-		/** [BlueBack.TestLib.SpeedTester.ITest.PreTest]計測終了直後に呼び出される。
+		/** [BlueBack.TestLib.SpeedTester.Test_Base.PreTest]計測終了直後に呼び出される。
 
 			a_delta_time		: 処理秒数。
 			return			: 表示文字列。

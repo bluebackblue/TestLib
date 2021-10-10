@@ -4,11 +4,11 @@
 */
 namespace BlueBack.TestLib.SpeedTester
 {
-	/** CallBackInterface
+	/** CallBack_Base
 	*/
-	public interface CallBackInterface
+	public interface CallBack_Base
 	{
-		/** OnStart
+		/** [BlueBack.TestLib.SpeedTester.CallBack_Base]OnStart
 		*/
 		void OnStart();
 	}
