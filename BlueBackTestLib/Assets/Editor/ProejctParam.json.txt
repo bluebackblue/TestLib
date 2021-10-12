@@ -7,10 +7,10 @@
     "discription_simple":"テスト用ライブラリ",
     "discription_detal":[
         "テスト用ライブラリ",
-        "* 速度計測と計測結果の画面表示",
+        "* 速度計測と計測結果の画面表示"
     ],
     "keyword":[
-        "test",
+        "test"
     ],
     "changelog":[
         "# Changelog",
@@ -18,7 +18,7 @@
         "## [0.0.0] - 2021-03-27",
         "### Changes",
         "- Init",
-        "",
+        ""
     ],
     "root_readmemd_path":"../../README.md",
     "need_unity_version":"2020.1",
@@ -35,8 +35,8 @@
             {
                 "use":"use",
                 "package_fullname":"BlueBack.TestLib",
-                "url":"https://github.com/bluebackblue/UpmTestLib",
-            },
+                "url":"https://github.com/bluebackblue/UpmTestLib"
+            }
         ]
     },
     "asmdef_sample":{
@@ -46,8 +46,8 @@
             {
                 "use":"use",
                 "package_fullname":"BlueBack.TestLib",
-                "url":"https://github.com/bluebackblue/UpmTestLib",
-            },
+                "url":"https://github.com/bluebackblue/UpmTestLib"
+            }
         ]
-    },
+    }
 }
