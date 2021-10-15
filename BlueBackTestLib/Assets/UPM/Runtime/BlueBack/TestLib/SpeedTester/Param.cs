@@ -6,7 +6,7 @@ namespace BlueBack.TestLib.SpeedTester
 {
 	/** Param
 	*/
-	public class Param
+	public sealed class Param
 	{
 		/** camera
 		*/
