@@ -33,7 +33,7 @@
         ],
         "reference_list":[
             {
-                "use":"use",
+                "mode":"package",
                 "package_fullname":"BlueBack.TestLib",
                 "url":"https://github.com/bluebackblue/UpmTestLib"
             }
@@ -44,7 +44,7 @@
         ],
         "reference_list":[
             {
-                "use":"use",
+                "mode":"package",
                 "package_fullname":"BlueBack.TestLib",
                 "url":"https://github.com/bluebackblue/UpmTestLib"
             }

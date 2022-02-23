@@ -1,8 +1,8 @@
 
 
-/** Samples.TestLib.SpeedTester_Enum
+/** BlueBack.TestLib.Samples.SpeedTester_Enum
 */
-namespace Samples.TestLib.SpeedTester_Enum
+namespace BlueBack.TestLib.Samples.SpeedTester_Enum
 {
 	/** Main_MonoBehaviour
 	*/
