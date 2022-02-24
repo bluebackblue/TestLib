@@ -160,7 +160,7 @@ namespace BlueBack.TestLib.Samples.SpeedTester_Enum
 
 		/** [BlueBack.TestLib.SpeedTester.Test_Base.PreTest]計測終了直後に呼び出される。
 
-			a_delta_time		: 処理秒数。
+			a_delta_time	: 処理秒数。
 			return			: 表示文字列。
 
 		*/
