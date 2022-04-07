@@ -6,9 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Samples/TestLib/000/SpeedTester_Enum/Scene.unity
+    path: Assets/Samples/BlueBack.TestLib/000/SpeedTester_Interface/Scene.unity
+    guid: c0b2d72b560c92345a0f46047255de3c
+  - enabled: 1
+    path: Assets/Samples/BlueBack.TestLib/000/SpeedTester_Enum/Scene.unity
     guid: 9a4ba23d562b3f24689c67cc712d0df1
   - enabled: 1
-    path: Assets/Samples/TestLib/000/SpeedTester_FloatInt/Scene.unity
+    path: Assets/Samples/BlueBack.TestLib/000/SpeedTester_FloatInt/Scene.unity
     guid: 961ca3d8a57d31943b3f672ed34f55ed
   m_configObjects: {}

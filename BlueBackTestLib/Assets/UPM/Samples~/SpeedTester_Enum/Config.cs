@@ -14,7 +14,7 @@ namespace BlueBack.TestLib.Samples.SpeedTester_Enum
 
 		/** LOOP
 		*/
-		public const int LOOP = 100000;
+		public const int LOOP = 10000;
 	}
 }
 
