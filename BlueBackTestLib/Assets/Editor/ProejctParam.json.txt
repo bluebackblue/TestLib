@@ -1,53 +1,55 @@
 {
-    "namespace_author":"BlueBack",
-    "namespace_package":"TestLib",
-    "git_url":"https://github.com/bluebackblue/UpmTestLib",
-    "git_api":"https://api.github.com/repos/bluebackblue/UpmTestLib",
-    "git_path":"BlueBackTestLib/Assets/UPM",
-    "discription_simple":"テスト用ライブラリ",
-    "discription_detal":[
-        "テスト用ライブラリ",
-        "* 速度計測と計測結果の画面表示"
-    ],
-    "keyword":[
-        "test"
-    ],
-    "changelog":[
-        "# Changelog",
-        "",
-        "## [0.0.0] - 2021-03-27",
-        "### Changes",
-        "- Init",
-        ""
-    ],
-    "root_readmemd_path":"../../README.md",
-    "need_unity_version":"2020.1",
-    "asmdef_runtime":{
-        "define_list":[
-        ],
-        "reference_list":[
-        ]
-    },
-    "asmdef_editor":{
-        "define_list":[
-        ],
-        "reference_list":[
-            {
-                "mode":"package",
-                "package_fullname":"BlueBack.TestLib",
-                "url":"https://github.com/bluebackblue/UpmTestLib"
-            }
-        ]
-    },
-    "asmdef_sample":{
-        "define_list":[
-        ],
-        "reference_list":[
-            {
-                "mode":"package",
-                "package_fullname":"BlueBack.TestLib",
-                "url":"https://github.com/bluebackblue/UpmTestLib"
-            }
-        ]
-    }
+	"namespace_author":"BlueBack",
+	"namespace_package":"TestLib",
+	"git_url":"https://github.com/bluebackblue/UpmTestLib",
+	"git_api":"https://api.github.com/repos/bluebackblue/UpmTestLib",
+	"git_path":"BlueBackTestLib/Assets/UPM",
+	"discription_simple":"テスト用ライブラリ",
+	"discription_detal":[
+		"テスト用ライブラリ",
+		"* 速度計測と計測結果の画面表示"
+	],
+	"keyword":[
+		"test"
+	],
+	"changelog":[
+		"# Changelog",
+		"",
+		"## [0.0.0] - 2021-03-27",
+		"### Changes",
+		"- Init",
+		""
+	],
+	"root_readmemd_path":"../../README.md",
+	"need_unity_version":"2020.1",
+	"asmdef_runtime":{
+		"define_list":[
+		],
+		"reference_list":[
+		]
+	},
+	"asmdef_editor":{
+		"define_list":[
+		],
+		"reference_list":[
+			{
+				"mode":"package",
+				"package_fullname":"BlueBack.TestLib",
+				"url":"https://github.com/bluebackblue/UpmTestLib",
+				"define_package_pathname":"blueback.testlib"
+			}
+		]
+	},
+	"asmdef_sample":{
+		"define_list":[
+		],
+		"reference_list":[
+			{
+				"mode":"package",
+				"package_fullname":"BlueBack.TestLib",
+				"url":"https://github.com/bluebackblue/UpmTestLib",
+				"define_package_pathname":"blueback.testlib"
+			}
+		]
+	}
 }
