@@ -95,12 +95,12 @@ namespace BlueBack.TestLib.SpeedTester
 		public void OnStart()
 		{
 			for(int ii=0;ii<text_list.Length;ii++){
-				
+
 				float t_x = UnityEngine.Screen.width * this.param.canvas_text_offset_x;
 				float t_y = UnityEngine.Screen.height * (this.param.canvas_text_offset_y + ii * this.param.canvas_text_h);
 				float t_w = UnityEngine.Screen.width * this.param.canvas_text_w;
 				float t_h = UnityEngine.Screen.height * this.param.canvas_text_h;
-				
+
 				UnityEngine.UI.Text t_text = this.text_list[ii];
 				t_text.rectTransform.localScale = new UnityEngine.Vector3(1.0f,1.0f,1.0f);
 				t_text.rectTransform.sizeDelta = new UnityEngine.Vector2(t_w,t_h);

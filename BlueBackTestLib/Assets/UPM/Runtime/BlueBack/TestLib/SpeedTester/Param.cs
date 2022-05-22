@@ -13,7 +13,7 @@ namespace BlueBack.TestLib.SpeedTester
 		public string camera_name;
 		public UnityEngine.Color camera_color;
 		public float camera_depth;
-		
+
 		/** canvas
 		*/
 		public string canvas_name;

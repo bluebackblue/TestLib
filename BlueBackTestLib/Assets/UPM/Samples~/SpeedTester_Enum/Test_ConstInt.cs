@@ -62,7 +62,7 @@ namespace BlueBack.TestLib.Samples.SpeedTester_Enum
 		/** indexlist
 		*/
 		private int[] indexlist = new int[Config.MAX];
-		
+
 		/** result
 		*/
 		private int result;
