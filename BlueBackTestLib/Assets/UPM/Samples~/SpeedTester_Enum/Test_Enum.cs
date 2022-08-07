@@ -6,7 +6,7 @@ namespace BlueBack.TestLib.Samples.SpeedTester_Enum
 {
 	/** Test_Enum
 	*/
-	public class Test_Enum : BlueBack.TestLib.SpeedTester.Test_Base
+	public sealed class Test_Enum : BlueBack.TestLib.SpeedTester.Test_Base
 	{
 		/** ActionType
 		*/

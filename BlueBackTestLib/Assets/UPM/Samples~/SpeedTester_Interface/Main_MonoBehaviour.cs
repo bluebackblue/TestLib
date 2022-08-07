@@ -6,7 +6,7 @@ namespace BlueBack.TestLib.Samples.SpeedTester_Interface
 {
 	/** Main_MonoBehaviour
 	*/
-	public class Main_MonoBehaviour : UnityEngine.MonoBehaviour
+	public sealed class Main_MonoBehaviour : UnityEngine.MonoBehaviour
 	{
 		/** speedtester
 		*/

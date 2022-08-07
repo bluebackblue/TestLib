@@ -5,7 +5,7 @@ namespace BlueBack.TestLib.Samples.SpeedTester_FloatInt
 {
 	/** Test_Int
 	*/
-	public class Test_Int : BlueBack.TestLib.SpeedTester.Test_Base
+	public sealed class Test_Int : BlueBack.TestLib.SpeedTester.Test_Base
 	{
 		/** list
 		*/

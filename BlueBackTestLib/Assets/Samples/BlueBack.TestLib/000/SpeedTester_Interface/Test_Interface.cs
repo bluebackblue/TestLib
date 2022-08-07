@@ -6,7 +6,7 @@ namespace BlueBack.TestLib.Samples.SpeedTester_Interface
 {
 	/** Test_Interface
 	*/
-	public class Test_Interface : BlueBack.TestLib.SpeedTester.Test_Base
+	public sealed class Test_Interface : BlueBack.TestLib.SpeedTester.Test_Base
 	{
 		/** action
 		*/
