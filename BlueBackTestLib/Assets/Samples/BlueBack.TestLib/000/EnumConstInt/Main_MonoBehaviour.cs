@@ -36,6 +36,14 @@ namespace BlueBack.TestLib.Samples.EnumConstInt
 				Config.MAX = UnityEngine.Mathf.Max(10,Config.MAX /= 10);
 			}
 
+			if(UnityEngine.Input.GetKeyDown(UnityEngine.KeyCode.PageUp) == true){
+				this.speedtest.view.offset.y -= 0.1f;
+				this.speedtest.ApplyPosition();
+			}else if(UnityEngine.Input.GetKeyDown(UnityEngine.KeyCode.PageDown) == true){
+				this.speedtest.view.offset.y += 0.1f;
+				this.speedtest.ApplyPosition();
+			}
+
 			this.speedtest.RandomTest(Config.TESTLOOP);
 		}
 

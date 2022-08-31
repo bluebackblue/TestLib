@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Samples/BlueBack.TestLib/000/InspectorSelection/Scene.unity
     guid: 4cc7edd1ccb2f8241860a05dd651138b
   - enabled: 1
-    path: Assets/Samples/BlueBack.TestLib/000/InterfaceClass/Scene.unity
+    path: Assets/Samples/BlueBack.TestLib/000/ActionDirect/Scene.unity
     guid: c0b2d72b560c92345a0f46047255de3c
   - enabled: 1
     path: Assets/Samples/BlueBack.TestLib/000/EnumConstInt/Scene.unity

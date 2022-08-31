@@ -27,6 +27,14 @@ namespace BlueBack.TestLib.SpeedTest
 		*/
 		public UnityEngine.UI.Text[] text_list;
 
+		/** offset
+		*/
+		public UnityEngine.Vector2 offset;
+
+		/** interval
+		*/
+		public float interval;
+
 		/** constructor
 		*/
 		public View(in InitParam a_initparam,int a_max)
@@ -60,12 +68,18 @@ namespace BlueBack.TestLib.SpeedTest
 				t_canvasscaler.referenceResolution = new UnityEngine.Vector2(UnityEngine.Screen.width,UnityEngine.Screen.height);
 			}
 
+			//offset
+			this.offset = a_initparam.offset;
+
+			//interval
+			this.interval = a_initparam.interval;
+
 			//Text
 			{
 				UnityEngine.Font t_font = UnityEngine.Resources.GetBuiltinResource<UnityEngine.Font>(a_initparam.font_name);
-				UnityEngine.Vector2 t_position = a_initparam.offset * new UnityEngine.Vector2(UnityEngine.Screen.width,UnityEngine.Screen.height);
+				UnityEngine.Vector2 t_position = this.offset * new UnityEngine.Vector2(UnityEngine.Screen.width,UnityEngine.Screen.height);
 				UnityEngine.Vector2 t_size =  a_initparam.size * new UnityEngine.Vector2(UnityEngine.Screen.width,UnityEngine.Screen.height);
-				float t_interval = a_initparam.interval * UnityEngine.Screen.height;
+				float t_interval = this.interval * UnityEngine.Screen.height;
 
 				this.text_list = new UnityEngine.UI.Text[a_max];
 				for(int ii=0;ii<this.text_list.Length;ii++){
@@ -93,6 +107,23 @@ namespace BlueBack.TestLib.SpeedTest
 						t_text.rectTransform.anchoredPosition = new UnityEngine.Vector2(t_position.x,-t_position.y);
 					}
 				}
+			}
+		}
+
+		/** ApplyPosition
+		*/
+		public void ApplyPosition()
+		{
+			//interval
+			float t_interval = this.interval * UnityEngine.Screen.height;
+
+			//position
+			UnityEngine.Vector2 t_position = this.offset * new UnityEngine.Vector2(UnityEngine.Screen.width,UnityEngine.Screen.height);
+
+			for(int ii=0;ii<this.text_list.Length;ii++){
+				UnityEngine.UI.Text t_text = this.text_list[ii];
+				t_position.y += t_interval;
+				t_text.rectTransform.anchoredPosition = new UnityEngine.Vector2(t_position.x,-t_position.y);
 			}
 		}
 

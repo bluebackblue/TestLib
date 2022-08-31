@@ -17,11 +17,11 @@ namespace BlueBack.TestLib.SpeedTest
 	{
 		/** view
 		*/
-		private View view;
+		public View view;
 
 		/** list
 		*/
-		private Test_Base[] list;
+		public Test_Base[] list;
 
 		/** constructor
 
@@ -49,6 +49,13 @@ namespace BlueBack.TestLib.SpeedTest
 
 			//list
 			this.list = null;
+		}
+
+		/** ApplyPosition
+		*/
+		public void ApplyPosition()
+		{
+			this.view.ApplyPosition();
 		}
 
 		/** テスト。
